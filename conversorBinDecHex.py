@@ -14,7 +14,6 @@ def BinToDec(bin):
 def BinToHex(bin):
     resposta = ""
     quatros = [bin[::-1][i:i+4] for i in range(0, len(bin), 4)]
-    print(quatros)
     for q in quatros:
         numero = 48
         valor = 1
