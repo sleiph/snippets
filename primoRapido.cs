@@ -3,7 +3,7 @@ using System;
 class primos {
     static bool Primo(int caso) {
         int raiz = (int)Math.Sqrt((double)caso);
-        if (caso == 1)
+        if (caso <= 1)
             return false;
         else {
             if (caso != 2 && caso % 2 == 0)
