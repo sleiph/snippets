@@ -1,63 +1,49 @@
-calculavel = True
+def calcMemoria(cc, nc):
+    return int(cc) * int(nc)
 
-print("\nDeixe os campos que não souber em branco e eles serão calculados.")
+def calcCelula(cm, nc):   
+    return int(cm) / int(nc)
 
-# Declaração das variáveis conhecidas
-cm = input('\nCapacidade da memória em bits: ')
-cc = input('Capacidade da célula em bits: ')
-x = input('Tamanho do endereço em bits: ')
-nc = input('Número de células: ')
-
-# Cálculo de tamanho do endereço:
-def calculoDeX(n):
-    x = 1
-    while n > 2:
+def calcX(n):
+    x = 0
+    while n > 1:
         n /= 2
         x += 1
     return x
 
-if cm == "" and cc == "":
-    print("\nPelo menos uma das capacidades (cm ou cc) precisa ser informada.")
-    calculavel = False
+def calcNCel(x, cm, cc):
+    return 2 ** int(x) if x != "" else int(cm) / int(cc)
 
-# Cálculo de capacidade da memória:
-elif cm == "" and cc != "":
-    if nc == "" and x == "":
-        calculavel = False
-    elif x == "" and nc != "":
-        x = calculoDeX(int(nc))
-        cm = int(cc) * int(nc)
-    else:
-        nc = 2 ** int(x)
-        cm = int(cc) * int(nc)
-        
-# Cálculo de capacidade da célula:    
-elif cm != "" and cc == "":
-    if nc == "" and x == "":
-        calculavel = False
-    elif x == "" and nc != "":
-        x = calculoDeX(int(nc))
-        cc = int(cm) / int(nc)
-    else:
-        nc = 2 ** int(x)
-        cc = int(cm) / int(nc)
+print("Calculadora de Capacidade de Memória RAM")
+print("Deixe os campos que não souber em branco e eles serão calculados.")
+while True:
+    print("\nInforme pelo menos um dos valores a seguir:")
+    cm = input('Capacidade da memória em bits: ')
+    cc = input('\nCapacidade da célula em bits: ')
+    if cm != "" or cc != "":
+        break
+    print("\nPelo menos um desses dois valores deve ser informado.")
     
+if cm == "" or cc == "":
+    while True:
+        print("\n\nInforme também pelo menos um dos valores a seguir:")
+        x = input('Tamanho do endereço em bits: ')
+        nc = input('\nNúmero de células: ')
+        if x != "" or nc != "":
+            break
+        print("\nPelo menos um desses dois valores deve ser informado.")
 else:
-    # Cálculo de numero de células sem o tamanho do endereço:
-    if nc == "" and x == "":
-        nc = int(cm) / int(cc)
-        x = calculoDeX(int(nc))
-      
-    elif x != "" and nc == "":
-        nc = 2 ** int(x)
-        
-    else:
-        x = calculoDeX(int(nc))
+    print("\nNão precisa preencher os valores seguintes:")
+    x = input('Tamanho do endereço em bits: ')
+    nc = input('\nNúmero de células: ')
 
-if calculavel == False:
-    print("\nPelo menos duas variáveis precisam ser informadas.")
-else:        
-    print("\nCapacidade da memória: {} bits/ {:,} bytes".format(cm, int(cm)/8))
-    print("Capacidade da célula: {} bits/ {} bytes".format(cc, int(cc)/8))
-    print("Tamanho do endereço: {} bits".format(x))
-    print("Número de células: {}/ 2^{}".format(int(nc), x))
+valNC = nc if nc != "" else calcNCel(x, cm, cc)
+valX = x if x != "" else calcX(int(valNC))
+
+valCel = cc if cc != "" else calcCelula(cm, valNC)
+valMem = cm if cm != "" else calcMemoria(valCel, valNC)
+
+print("\n\nCapacidade da memória: {} bits, ou {:,} bytes".format(valMem, int(valMem)/8))
+print("Capacidade da célula: {0} bits, ou {1} bytes".format(valCel, int(valCel)/8))
+print("Tamanho do endereço: {0} bits".format(valX))
+print("Número de células: {0}/ 2^{1}".format(valNC, valX))
