@@ -2,8 +2,8 @@
 # Solução menos eficiente que as normalmente encontradas na internet, eu tentei fazer com que o programa resolvesse o problema do jeito que um humano resolveria, ou seja, ineficientemente.
 
 def BinToDec(bin):
-    reverso = bin[::-1]
     resposta = 0
+    reverso = bin[::-1]
     valor = 1
     for n in reverso:
         if int(n) == 1:
@@ -26,11 +26,11 @@ def BinToHex(bin):
     return resposta
 
 def DecToBin(dec):
+    resposta = ""
     resto, i = dec, 1
     while resto // 2:
         i *= 2
         resto /= 2
-    resposta = ""
     resto = dec
     while (i > 0):
         resposta += '1' if resto >= i else '0'
@@ -43,8 +43,8 @@ def DecToHex(dec):
     return BinToHex(binario)
 
 def HexToBin(hex):
-    i = int(hex, 16)
     resposta = ""
+    i = int(hex, 16)
     while i > 0:
         resposta += str(i%2)
         i = i >> 1
@@ -55,31 +55,22 @@ def HexToDec(hex):
     return BinToDec(binario)
 
 def conversor(n):
-    if n == 1:
-        numero = input("\nDigite o número binário que quer converter pra decimal: ").replace(' ', '')
-        print("\n{} em decimal é: {}".format(numero, BinToDec(numero)))
+    if n>=1 and n<=6:
+        numero = input("\nDigite o número que quer converter: ").replace(' ', '')
+        if n == 1:
+            print("\n{} em decimal é: {}".format(numero, BinToDec(numero)))
+        elif n == 2:
+            print("\n{} em hexadecimal é: {}".format(numero, BinToHex(numero)))
+        elif n == 3:
+            print("\n{} em binário é: {}".format(int(numero), DecToBin(int(numero))))
+        elif n == 4:
+            print("\n{} em hexadecimal é: {}".format(int(numero), DecToHex(int(numero))))
+        elif n == 5:
+            print("\n{} em binário é: {}".format(numero, HexToBin(numero)))
+        elif n == 6:
+            print("\n{} em decimal é: {}".format(numero, HexToDec(numero)))
         return True
-    elif n == 2:
-        numero = input("\nDigite o número binário que quer converter pra hexadecimal: ").replace(' ', '')
-        print("\n{} em hexadecimal é: {}".format(numero, BinToHex(numero)))
-        return True
-    elif n == 3:
-        numero = int(input("\nDigite o número decimal que quer converter pra binário: "))
-        print("\n{} em binário é: {}".format(numero, DecToBin(numero)))
-        return True
-    elif n == 4:
-        numero = int(input("\nDigite o número decimal que quer converter pra hexadecimal: "))
-        print("\n{} em hexadecimal é: {}".format(numero, DecToHex(numero)))
-        return True
-    elif n == 5:
-        numero = input("\nDigite o número hexadecimal que quer converter pra binário: ")
-        print("\n{} em binário é: {}".format(numero, HexToBin(numero)))
-        return True
-    elif n == 6:
-        numero = input("\nDigite o número hexadecimal que quer converter pra decimal: ")
-        print("\n{} em decimal é: {}".format(numero, HexToDec(numero)))
-        return True
-    return False
+    else: return False
 
 print("\n******************* Conversor Binário/Decimal/Hexadecimal *******************")
 print("\n1 - Binário -> Decimal")
