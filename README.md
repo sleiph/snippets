@@ -13,4 +13,4 @@ Mais um programa de primos, retorna verdadeiro se o número informado for primo.
 ### n Divisores
 Uma função em C++17 que retorna da forma mais rápida a quantidade de divisores de um número inteiro, baseada no algoritmo do site [geeksforgeeks](https://www.geeksforgeeks.org/count-divisors-n-on13/), pra resolver um problema do [projeto Euler](https://projecteuler.net).
 ### Algoritmo de Kruskal
-O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikipedia.org/wiki/%C3%81rvore_de_extens%C3%A3o_m%C3%ADnima) pra um grafo com pesos definindos, ele é útil, basicamente pra encontrar o menor número de conexões necessário pra conectar todos os pontos de um grafo. Baseado fortemente no trabalho do [Xianshun Chen](https://github.com/chen0040/lua-graph/find/master).
+O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikipedia.org/wiki/%C3%81rvore_de_extens%C3%A3o_m%C3%ADnima) pra um grafo com pesos definindos, ele é útil, basicamente pra encontrar o menor número de conexões necessário pra conectar todos os vértices de um grafo. Baseado fortemente no trabalho do [Xianshun Chen](https://github.com/chen0040/lua-graph/find/master).
