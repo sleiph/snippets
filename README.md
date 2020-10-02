@@ -25,8 +25,5 @@ Uma função em C++17 que retorna da forma mais rápida a quantidade de divisore
 ### Algoritmo de Kruskal
 O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikipedia.org/wiki/%C3%81rvore_de_extens%C3%A3o_m%C3%ADnima) pra um grafo com pesos definindos, ele é útil, basicamente pra encontrar o menor número de conexões necessário pra conectar todos os vértices de um grafo. Baseado fortemente no trabalho do [Xianshun Chen](https://github.com/chen0040/lua-graph/find/master).
 
-### Algoritmo de Kruskal
-O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikipedia.org/wiki/%C3%81rvore_de_extens%C3%A3o_m%C3%ADnima) pra um grafo com pesos definindos, ele é útil, basicamente pra encontrar o menor número de conexões necessário pra conectar todos os vértices de um grafo. Baseado fortemente no trabalho do [Xianshun Chen](https://github.com/chen0040/lua-graph/find/master).
-
 ### Pesquisa Binária
 Algoritmo original em [geeksforgeeks](https://www.geeksforgeeks.org/binary-search/). Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posição de um elemento x em um array ordenado, ou -1 se o elemento não estiver presente. Eu fiz uma interação com o console, pra pedir os elementos do array e o número buscado pro usuário, mas a parte mais importante é a função de busca.
