@@ -27,3 +27,6 @@ O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikip
 
 ### Pesquisa Binária
 Algoritmo original em [geeksforgeeks](https://www.geeksforgeeks.org/binary-search/). Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posição de um elemento x em um array ordenado, ou -1 se o elemento não estiver presente. Eu fiz uma interação com o console, pra pedir os elementos do array e o número buscado pro usuário, mas a parte mais importante é a função de busca.
+
+### Algoritmo de Heap
+O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência n de objetos, ou seja, todas as combinações possíveis dos elementos de uma lista, sem repetição. Eu encontrei esse algoritmo no [geeksforgeeks](https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/) e decidí adaptá-lo pra Lua, linguagem complicada, que só me enche de ódio e orgulho.
