@@ -1,7 +1,7 @@
+#include <stdio.h>
 #include <bits/stdc++.h> 
 
-using namespace std;
-
+// funcao pra encontrar o numero de divisores de um inteiro
 int nDivisores(int caso)
 { 
     int contagem = 0; 
@@ -14,4 +14,16 @@ int nDivisores(int caso)
         } 
     } 
     return contagem; 
+}
+
+// funcao motriz
+// entrar com um inteiro no console
+int main()
+{
+    int n = 0;
+    scanf("%d", &n);
+    
+    printf("%d\n", nDivisores(n));
+
+    return 0;
 }
