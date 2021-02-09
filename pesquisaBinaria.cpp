@@ -29,23 +29,30 @@ int pesquisaBinaria(int arr[], int alfa, int omega, int x)
   
 int main(void) 
 {
-    int arr[1000];
-    int temp, i=0, n = 0, x;
-    printf("Digite os valores do array ordenado, ");
-    printf(" termine com o número 666: \n");
-    while( true ) {
+    int qnt, temp, i=0, n = 0, x;
+    
+    printf("Digite a quantidade de elementos do array: ");
+    scanf( "%d", &qnt);
+    
+    int arr[qnt];
+    
+    printf("Digite os valores do array ordenado, separados por espaço: ");
+    while( qnt > 0 ) {
         scanf( "%d", &temp);
-        if (temp == 666)
-            break;
         arr[i] = temp;
         n++;
         i++;
+        qnt--;
     }
-    printf("Digite o valor a ser buscado: \n");
+    sort(arr, arr + (sizeof(arr) / sizeof(arr[0])));
+    
+    printf("Digite o valor a ser buscado no array: \n");
     scanf( "%d", &x);
+    
     int resultado = pesquisaBinaria(arr, 0, n-1, x); 
+    
     (resultado == -1) ? cout << "Elemento não faz parte do array dado" 
                     : cout << "Elemento presente no índice " << resultado;
     
     return 0;
-} 
+}
