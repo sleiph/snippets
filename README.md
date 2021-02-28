@@ -13,6 +13,9 @@ Pega pelo menos duas informações que você tenha (Capacidade da memória/Capac
 ### Conversor Binário - Decimal - Hexadecimal
 Solução menos eficiente que as normalmente encontradas na internet, eu tentei fazer com que o programa resolvesse o problema do jeito que um humano resolveria, ou seja, ineficientemente.
 
+### Distribuicao de frequências
+Cria uma tabela de distribuição de frequências com base em um array de dados, criado no notebook de python da Google pra aula de estatísticas.
+
 ### Cálculo de equações de segundo grau
 Calcula equações de segundo grau, evitando divisão por zero e equações de primeiro grau.
 
