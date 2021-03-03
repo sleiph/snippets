@@ -22,6 +22,9 @@ Calcula equações de segundo grau, evitando divisão por zero e equações de p
 ### Fibonacci Chamadas
 Encontra o enésimo valor da sequência de Fibonacci por função recursiva e mostra quantas chamadas foram feitas à função. Feito enquanto tentava entender Haskell.
 
+### Fila Circular (FIFO)
+Classe personalizada do java, que funciona como uma fila, que armazena valores e retorna o primeiro item quando chamada, funciona de forma circular, então não vai usar muita memória.
+
 ### n Divisores
 Uma função em C++17 que retorna da forma mais rápida a quantidade de divisores de um número inteiro, baseada no algoritmo do site [geeksforgeeks](https://www.geeksforgeeks.org/count-divisors-n-on13/), pra resolver um problema do [projeto Euler](https://projecteuler.net).
 
@@ -30,6 +33,9 @@ O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência 
 
 ### Pesquisa Binária
 Algoritmo original em [geeksforgeeks](https://www.geeksforgeeks.org/binary-search/). Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posição de um elemento x em um array ordenado, ou -1 se o elemento não estiver presente. Eu fiz uma interação com o console, pra pedir os elementos do array e o número buscado pro usuário, mas a parte mais importante é a função de busca.
+
+### Pilha (LIFO)
+Classe personalizada do java, que funciona como uma pilha, que armazena valores e retorna o último item quando chamada, pode ser invertida e impressa.
 
 ### Primo Rápido
 Mais um programa de primos, retorna verdadeiro se o número informado for primo. Criado pra resolver um problema do [Uri Online Judge](https://www.urionlinejudge.com.br).
