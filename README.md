@@ -35,7 +35,7 @@ O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência 
 Algoritmo original em [geeksforgeeks](https://www.geeksforgeeks.org/binary-search/). Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posição de um elemento x em um array ordenado, ou -1 se o elemento não estiver presente. Eu fiz uma interação com o console, pra pedir os elementos do array e o número buscado pro usuário, mas a parte mais importante é a função de busca.
 
 ### Pilha (LIFO)
-Classe personalizada do java, que funciona como uma pilha, que armazena valores e retorna o último item quando chamada, pode ser invertida e impressa.
+Classe personalizada do java, que funciona como uma pilha, que armazena valores e retorna o último item quando chamada, pode ser invertida, medida ou impressa, também funciona de forma circular pra melhorar a performance.
 
 ### Primo Rápido
 Mais um programa de primos, retorna verdadeiro se o número informado for primo. Criado pra resolver um problema do [Uri Online Judge](https://www.urionlinejudge.com.br).

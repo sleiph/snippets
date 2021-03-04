@@ -8,18 +8,16 @@ public class Fila {
     int pes;
     /// inverter Fila
     Boolean isInvertida;
-    /// gambiarra
-    Boolean isPrimeiro;
     
     // Construtor
     Fila(int c) {
         this.capacidade = c;
         dados = new int[capacidade];
         tamanho = 0;
-        cabeca = 0;
+        cabeca = -1;
         pes = 0;
         isInvertida = false;
-        isPrimeiro = true;
+
     }
     
     // Checks de capacidade
@@ -29,32 +27,29 @@ public class Fila {
     public boolean vazia() {
         return (tamanho == 0);
     }
+    public int tamanho() {
+        return tamanho;
+    }
     
     // Métodos
     public void adiciona(int e) {
         if (!cheia()) {
-            if (isPrimeiro) {
-                tamanho++;
-                dados[cabeca] = e;
-                isPrimeiro = false;
+            tamanho++;
+            if (!isInvertida) {
+                cabeca++;
+                if (cabeca == capacidade)
+                    cabeca = 0;
             }
             else {
-                tamanho++;
-                if (!isInvertida) {
-                    cabeca++;
-                    if (cabeca == capacidade)
-                        cabeca = 0;
-                }
-                else {
-                    cabeca--;
-                    if (cabeca == -1)
-                        cabeca = capacidade-1;
-                }
-                dados[cabeca] = e;
+                cabeca--;
+                if (cabeca == -1)
+                    cabeca = capacidade-1;
             }
+            dados[cabeca] = e;
+
         }
         else {
-            System.out.println("Fila Cheia, impossível adicionar o elemento " + e);
+            System.out.println("Fila Cheia, impossível adicionar o elemento '" + e + "'");
         }
     }
     
@@ -67,18 +62,15 @@ public class Fila {
                 pes++;
                 if (pes == capacidade)
                     pes = 0;
-                System.out.println(pes + " pes " + cabeca + " cabeca " + tamanho + " tamanho");
             }
             else {
                 pes--;
                 if (pes == -1)
                     pes = capacidade-1;
-                System.out.println(pes + " pes " + cabeca + " cabeca " + tamanho + " tamanho");
             }
             return aux;
         }
         else {
-            System.out.println(pes + " pes " + cabeca + " cabeca " + tamanho + " tamanho");
             return -1;
         }
     }
@@ -87,10 +79,7 @@ public class Fila {
         int aux = cabeca;
         cabeca = pes;
         pes = aux;
-        if (!isInvertida)
-            isInvertida = true;
-        else
-            isInvertida = false;
+        isInvertida = isInvertida ? false : true;
     }
     
     // imprime a fila no console
