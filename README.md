@@ -21,15 +21,15 @@ Mais um programa de primos, retorna verdadeiro se o número informado for primo.
 ## Grafos
 
 ###### Algoritmo de Kruskal
-O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikipedia.org/wiki/%C3%81rvore_de_extens%C3%A3o_m%C3%ADnima) pra um grafo com pesos definindos, ele é útil, basicamente pra encontrar o menor número de conexões necessário pra conectar todos os vértices de um grafo. Baseado fortemente no trabalho do [Xianshun Chen](https://github.com/chen0040/lua-graph/find/master).
+O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikipedia.org/wiki/%C3%81rvore_de_extens%C3%A3o_m%C3%ADnima) pra um grafo com pesos definindos, ele é útil pra encontrar o menor número de conexões necessário pra ligar todos os vértices de um grafo. Baseado fortemente no trabalho do [Xianshun Chen](https://github.com/chen0040/lua-graph/find/master).
 
 ###### Algoritmo de Heap
-O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência n de objetos, ou seja, todas as combinações possíveis dos elementos de uma lista, sem repetição. Eu encontrei esse algoritmo no [geeksforgeeks](https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/) e decidí adaptá-lo pra Lua, linguagem complicada, que só me enche de ódio e orgulho.
+O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência n de objetos, ou seja, todas as combinações possíveis dos elementos de uma lista, sem repetição. Eu encontrei esse algoritmo no [geeksforgeeks](https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/) e decidí adaptá-lo pra Lua, linguagem complicada que me enche de ódio e orgulho.
 
 ## Otimização
 
 ###### Pesquisa Binária
-Algoritmo original em [geeksforgeeks](https://www.geeksforgeeks.org/binary-search/). Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posição de um elemento x em um array ordenado, ou -1 se o elemento não estiver presente. Eu fiz uma interação com o console, pra pedir os elementos do array e o número buscado pro usuário, mas a parte mais importante é a função de busca.
+Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posição de um elemento x em um array ordenado, ou -1 se o elemento não estiver presente. Eu fiz uma interação com o console, pra pedir os elementos do array e o número buscado pro usuário, mas a parte mais importante é a função de busca. Original em [geeksforgeeks](https://www.geeksforgeeks.org/binary-search/).
 
 ###### Fila Circular (FIFO)
 Classe personalizada do java, que funciona como uma fila, que armazena valores e retorna o primeiro item quando chamada, funciona de forma circular, então não vai usar muita memória.
@@ -41,6 +41,9 @@ Classe personalizada do java, que funciona como uma pilha, que armazena valores 
 
 ###### Distribuicao de frequências
 Cria uma tabela de distribuição de frequências com base em um array de dados, criado no notebook de python da Google pra aula de estatísticas.
+
+###### Preços das ações B³
+Notebook do Colab pra analisar diferentes fundos de investimento da BOVESPA, partindo dos dados do [Yahoo Finanças](https://finance.yahoo.com). Fortissimamente baseado no trabalho do [Matheus Coradini](https://medium.com/geleia/an%C3%A1lise-de-a%C3%A7%C3%B5es-com-python-7f6624939fb).
 
 ## Utilidades
 
