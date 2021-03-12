@@ -9,14 +9,17 @@ Alguns pedaços de código em linguagens variadas que eu costumo usar nos estudo
 ###### Cálculo de equações de segundo grau
 Calcula equações de segundo grau, evitando divisão por zero e equações de primeiro grau.
 
-###### Fibonacci Chamadas
+###### Fibonacci e quantas chamadas
 Encontra o enésimo valor da sequência de Fibonacci por função recursiva e mostra quantas chamadas foram feitas à função. Feito enquanto tentava entender Haskell.
 
-###### n Divisores
+###### número de Divisores
 Uma função em C++17 que retorna da forma mais rápida a quantidade de divisores de um número inteiro, baseada no algoritmo do site [geeksforgeeks](https://www.geeksforgeeks.org/count-divisors-n-on13/), pra resolver um problema do [projeto Euler](https://projecteuler.net).
 
 ###### Primo Rápido
 Mais um programa de primos, retorna verdadeiro se o número informado for primo. Criado pra resolver um problema do [Uri Online Judge](https://www.urionlinejudge.com.br).
+
+###### número de combinações possíveis pra um resultado
+Depois de passar um tempo euclidiano tentando entender o método recursivo de achar o número de combinações possíveis de elementos pra obter um resultado, eu simplesmente desistí e decidi adaptar uma [solução dinâmica](https://stackoverflow.com/a/12501101/5471022) do java pro python. Muito usado em problemas de combinações de troco.
 
 ## Grafos
 
