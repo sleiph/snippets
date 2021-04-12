@@ -34,6 +34,9 @@ O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência 
 ###### Pesquisa Binária
 Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posição de um elemento x em um array ordenado, ou -1 se o elemento não estiver presente. Eu fiz uma interação com o console, pra pedir os elementos do array e o número buscado pro usuário, mas a parte mais importante é a função de busca. Original em [geeksforgeeks](https://www.geeksforgeeks.org/binary-search/).
 
+###### mergeSort
+Algoritmo de ordenação de array pelo método merge-sort, copiado descaradamente do meu professor, [Alecio Godói](https://github.com/aleciogodoi), ele combina programação recursiva com iterativa pra ordenar o array de forma rápida.
+
 ###### Fila Circular (FIFO)
 Classe personalizada do java, que funciona como uma fila, que armazena valores e retorna o primeiro item quando chamada, funciona de forma circular, então não vai usar muita memória.
 
