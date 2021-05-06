@@ -37,6 +37,11 @@ Algoritmo de Pesquisa Binária em C++, feito do modo recursivo, retorna a posiç
 ###### mergeSort
 Algoritmo de ordenação de array pelo método merge-sort, copiado descaradamente do meu professor, [Alecio Godói](https://github.com/aleciogodoi), ele combina programação recursiva com iterativa pra ordenar o array de forma rápida.
 
+## Estrutura de dados
+
+###### Árvore Binária
+Mais uma idéia copiada descaradamente do meu professor, [Alecio Godói](https://github.com/aleciogodoi), ninguém mandou ele ser professor no Brasil, estrutura de árvore binária, que adiciona elementos em uma estrutura de nós de acordo com o valor de cada elemento, também é capaz de imprimir esses valores de forma ordenada sem precisar de um algoritmo de ordenação.
+
 ###### Fila Circular (FIFO)
 Classe personalizada do java, que funciona como uma fila, que armazena valores e retorna o primeiro item quando chamada, funciona de forma circular, então não vai usar muita memória.
 
