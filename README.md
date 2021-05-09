@@ -40,7 +40,7 @@ Algoritmo de ordenação de array pelo método merge-sort, copiado descaradament
 ## Estrutura de dados
 
 ###### Árvore Binária
-Mais uma idéia copiada descaradamente do meu professor, [Alecio Godói](https://github.com/aleciogodoi), ninguém mandou ele ser professor no Brasil, estrutura de árvore binária, que adiciona elementos em uma estrutura de nós de acordo com o valor de cada elemento, também é capaz de imprimir esses valores de forma ordenada sem precisar de um algoritmo de ordenação.
+Mais uma idéia copiada descaradamente do meu professor, [Alecio Godói](https://github.com/aleciogodoi), ninguém mandou ser professor no Brasil Estrutura de árvore binária, que adiciona strings e a quantidade de vezes que elas se repetiram em uma estrutura de nós, de acordo com o valor alfabético de cada elemento, também é capaz de buscar, excluir e imprimir esses valores de forma ordenada sem precisar de um algoritmo de sort.
 
 ###### Fila Circular (FIFO)
 Classe personalizada do java, que funciona como uma fila, que armazena valores e retorna o primeiro item quando chamada, funciona de forma circular, então não vai usar muita memória.

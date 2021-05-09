@@ -7,8 +7,10 @@ public class Main {
 
 		Arvore minhaArvore = new Arvore();
 		while (sc.hasNext()) {
-			minhaArvore.adiciona(sc.nextInt());
+			minhaArvore.adiciona(sc.next());
 		}
+		
+		sc.close();
 		
 		System.out.print("\nPre ordem: ");
 		minhaArvore.exibirPreOrdem(minhaArvore.raiz);
