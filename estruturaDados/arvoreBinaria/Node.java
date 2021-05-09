@@ -1,5 +1,3 @@
-package Arvore;
-
 public class Node {
 	int elemento;
 	Node esquerda;

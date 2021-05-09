@@ -1,5 +1,3 @@
-package Arvore;
-
 public class Arvore {
 	Node raiz;
 	Arvore() {
@@ -9,7 +7,9 @@ public class Arvore {
 		Node novo = new Node(e);
 		if (raiz == null) { // Verifica se a árvore está vazia
 			raiz = novo;    // inclui o Nó na raiz
-		} else {
+			System.out.println("Árvore criada com raiz " + e);
+		}
+		else {
 			Node aux1 = raiz, aux2 = raiz;
 			while (aux1 != null) {
 				aux2 = aux1;
