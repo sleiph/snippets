@@ -1,3 +1,5 @@
+package estruturaDados;
+
 public class Pilha {
     // Atributos
     int[] dados;

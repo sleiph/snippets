@@ -1,3 +1,5 @@
+package estruturaDados;
+
 public class Fila {
     // Atributos
     int[] dados;

@@ -1,3 +1,5 @@
+package estruturaDados.arvoreBinaria;
+
 public class Node {
 	String elemento;
 	int quantidade;

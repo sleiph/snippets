@@ -1,3 +1,5 @@
+package estruturaDados.arvoreBinaria;
+
 public class Arvore {
 	Node raiz;
 	private int tamanho;

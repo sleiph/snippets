@@ -1,3 +1,5 @@
+package otimizacao;
+
 import java.util.Random;
 import java.util.Arrays;
 

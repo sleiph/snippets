@@ -1,3 +1,5 @@
+package estruturaDados.arvoreBinaria;
+
 import java.util.Scanner;
 
 public class Main {

@@ -27,7 +27,11 @@ Depois de passar um tempo euclidiano tentando entender o método recursivo de ac
 O algoritmo de Kruskal busca uma [árvore de extensão mínima](https://pt.wikipedia.org/wiki/%C3%81rvore_de_extens%C3%A3o_m%C3%ADnima) pra um grafo com pesos definindos, ele é útil pra encontrar o menor número de conexões necessário pra ligar todos os vértices de um grafo. Baseado fortemente no trabalho do [Xianshun Chen](https://github.com/chen0040/lua-graph/find/master).
 
 ###### Algoritmo de Heap
-O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência n de objetos, ou seja, todas as combinações possíveis dos elementos de uma lista, sem repetição. Eu encontrei esse algoritmo no [geeksforgeeks](https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/) e decidí adaptá-lo pra Lua, linguagem complicada que me enche de ódio e orgulho.
+O algoritmo de Heap é usado pra gerar todas as permutações de uma sequência n de objetos, ou seja, todas as combinações possíveis dos elementos de uma lista, sem repetição. Eu encontrei esse algoritmo no [geeksforgeeks](https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations) e decidí adaptá-lo pra Lua, linguagem complicada que me enche de ódio e orgulho.
+
+###### Componentes conectados em um grafo não dirigido
+Um grafo não dirigido é aquele onde se há caminho de a até b também há caminho de b até a.
+Esse algoritmo que eu mais uma vez ~copiei~ do [geeksforgeeks](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph) serve pra encontrar todos os componentes conexos de um grafo G(V,A) e imprimi-los no console em ordem crescente.
 
 ## Otimização
 
