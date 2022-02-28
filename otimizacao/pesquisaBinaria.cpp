@@ -2,7 +2,8 @@
 
 // Pesquisa Binária em C++
 // Método recursivo
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -52,7 +53,7 @@ int main(void)
     int resultado = pesquisaBinaria(arr, 0, n-1, x); 
     
     (resultado == -1) ? cout << "Elemento não faz parte do array dado" 
-                    : cout << "Elemento presente no índice " << resultado;
+                      : cout << "Elemento presente no índice " << resultado;
     
     return 0;
 }

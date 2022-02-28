@@ -12,14 +12,13 @@ public class Fila {
     Boolean isInvertida;
     
     // Construtor
-    Fila(int c) {
+    Fila (int c) {
         this.capacidade = c;
         dados = new int[capacidade];
         tamanho = 0;
         cabeca = -1;
         pes = 0;
         isInvertida = false;
-
     }
     
     // Checks de capacidade
